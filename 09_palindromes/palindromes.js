@@ -1,4 +1,8 @@
-const palindromes = function () {
+const palindromes = function (string) {
+noSpaceWord = string.toLowerCase().replace(/[^a-z0-9]/g,'');
+reversed = noSpaceWord.split('').reverse().join('');
+return noSpaceWord == reversed;
+
 
 };
 
